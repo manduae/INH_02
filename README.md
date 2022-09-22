@@ -46,13 +46,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier de naam van de pagina  
   <img src="readme-images/sc_second_page.jpeg" width="375px" alt="omschrijving van de pagina">
  
-</details>
-
-
-
-## Toegankelijkheidstest 1/2 (week 1)
-
-<details>
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
@@ -96,26 +89,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-</details>
 
+Breakdown schets
 
-
-## Breakdownschets (week 1)
-
-<details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   <img src="readme-images/breakdown.png" width="375px" alt="breakdownschets">
   
-</details>
+Voortgang
 
-
-
-
-
-## Voortgang 1 (week 2)
-
-<details>
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
@@ -125,11 +107,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Emilio: Breakdownschets bespreken
+  Giorgio: Breakdownschets en HTML bespreken
+  Nathan: Breakdownschets en HTML bespreken
+  Jesse: HTML bespreken
+  
 
 
   ### Verslag van meeting
