@@ -90,7 +90,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  <img src="readme-images/breakdown.pngg" width="375px" alt="breakdownschets">
+  <img src="readme-images/breakdown.png" width="375px" alt="breakdownschets">
   
 </details>
 
