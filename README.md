@@ -119,6 +119,8 @@ Voortgang
   
   ### Stand van zaken
   Voor mijn gevoel klopt mijn breakdown schets volledig, dit geeft rust aangezien ik nu een correcte HTML basis kan schrijven wat mij helpt in het process naar het coderen van een complete website.
+  
+  <img src="readme-images/html_progress.png" width="375px" alt="breakdownschets">
 
 
 </details>
