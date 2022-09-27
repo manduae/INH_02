@@ -2,11 +2,6 @@
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
 
 
 
@@ -49,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  De website bevat voor een grotendeel div elementen, hierdoor vind ik het lastig om de website te ontrafelen middels een semantisch correcte code. Wat ook opvalt is dat de website geen main element bevat.
 
   #### Screenreader
   www.vanmoof.com/nl getest:
@@ -74,28 +69,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   #### Muis en Toetsenbord 
   De taps zijn over het algemeen wel logisch, echter slaat de screenreader hele blokken over zonder de context te vermelden waar je je bevindt als gebruiker.
-
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   
 
 Ontvangen test van Giorgio:
 
 
-
+<details open>
 
 
 Breakdown schets
 
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  <img src="readme-images/breakdown.png" width="375px" alt="breakdownschets">
+  <img src="readme-images/breakdownschets1.png" width="375px" alt="breakdownschets">
   
 Voortgang
 
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  Moeite met het vertalen van breakdown schets naar HTML ivm met vragen over alle divs op de website. 
+  Moeite met het vertalen van breakdown schets naar HTML ivm met vragen over alle divs op de website. Hierdoor ben ik niet zeker over het schrijven van mijn HTML, ik wilde eerst voldoende feedback ontvangen van de docent gedurende voortganggesprek 1 waarop ik een 2e breakdownschets kon maken en vervolgens mijn html kon gaan schrijven.
 
 
   ### Agenda voor meeting
@@ -111,14 +104,24 @@ Voortgang
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Punt 1: 
-  - 
-  - 
-  - 
+  - Punt 1: Mijn belangrijkste vraag werd eigenlijk al beantwoord gedurende de gesprekjes voorafgaand mijn gesprek. Hierin werd veelvuldig uitgelegd dat je met unordered list of ordered list div items en article items kan tackelen. 
+  - Punt 2: Header was prima: Logo met image erin, button aan de rechte kant met nav naar voren met Ul en List items.
+  - Punt 3: h1 miste, "Heineken silver" h1 maken. "de verfrissende smaak van nu" vervangen van h2 naar p.
+  - Punt 4: a in een button, klopt niet. Oplossing: Button leidt naar nieuwe pagina dus dit is een a element.
+  - Punt 5: "ons verhaal" moet een h2 worden.
+  - Punt 6: Article vervangen voor unordered list met list items.
+  - Punt 7: Footer kan beknopter met ul en li items die je vervolgens individueel kan stylen met CSS.
+  
+  
+  Hier mijn 2e versie van de breakdown: 
+  
+  <img src="readme-images/breakdownschets2.png" width="375px" alt="breakdownschets">
+  
+  ### Stand van zaken
+  Voor mijn gevoel klopt mijn breakdown schets volledig, dit geeft rust aangezien ik nu een correcte HTML basis kan schrijven wat mij helpt in het process naar het coderen van een complete website.
+
 
 </details>
-
-
 
 
 
