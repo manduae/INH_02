@@ -73,13 +73,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 Ontvangen test van Giorgio:
 
-<img src="readme-images/giorgio1.png" width="375px" alt="breakdownschets">
-<img src="readme-images/giorgio2.png" width="375px" alt="breakdownschets">
-<img src="readme-images/giorgio3.png" width="375px" alt="breakdownschets">
-<img src="readme-images/giorgio4.png" width="375px" alt="breakdownschets">
-<img src="readme-images/giorgio5.png" width="375px" alt="breakdownschets">
+<img src="readme-images/giorgio1.png" width="175px" alt="breakdownschets">
+<img src="readme-images/giorgio2.png" width="175px" alt="breakdownschets">
+<img src="readme-images/giorgio3.png" width="175px" alt="breakdownschets">
+<img src="readme-images/giorgio4.png" width="175px" alt="breakdownschets">
+<img src="readme-images/giorgio5.png" width="175px" alt="breakdownschets">
 
-Text tbc.
+Text nog te ontvangen.
 
 <details open>
 
