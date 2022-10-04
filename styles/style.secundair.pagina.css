@@ -16,7 +16,6 @@ button, summary {
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-
 :root {
 	/* startje */
 	--color-text:#111;
@@ -28,21 +27,13 @@ button, summary {
 
 
 /****************/
-/* ALGEMENE CODE */
+/* JOUW STYLING */
 /****************/
 
+/* jouw code */
 
 body {
   color:var(--color-text);
   background-color:var(--color-background);
-}
-
-
-header {
-  
-    display: flex;
-    height: 300px;
-    flex-flow: row wrap;
-  
 }
 
