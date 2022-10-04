@@ -19,9 +19,11 @@ button, summary {
 
 :root {
 	/* startje */
-	--color-text:#111;
+	--color-text:#000;
     --color-heading:#13670B;
 	--color-background:#eee;
+    --color-header-text:#fff;
+    --color-header-background: 102, 102, 102;
 }
 
 
@@ -51,14 +53,19 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     padding-top: 1vh;
+    
+/* bron: https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable voor het gebruiken van rgb code voor opacity ipv HEX */    
+    
+    background-color: rgba(var(--color-header-background), 0.7);
   
 }
 
 header a img {
      
     display: flex;
-    width: 100px;
+    width: 120px;
     padding-left: 30px;
+    padding-top: 30px;
     
 }
 
@@ -69,3 +76,14 @@ header ul {
     
 }
 
+nav li a {
+    
+    color:var(--color-header-text);
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 1.25em;
+    font-size: 14px;
+    
+}
