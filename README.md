@@ -147,7 +147,7 @@ Voortgang
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Tijdens mijn CSS proces kwam ik tot een aantal inzichtelijke conclusies. Omdat ik per breakpoint ging inspecteren, kwam ik erachter dat sommige sections weggehaald kon worden en de content hierin samengevoegd kom worden.  
 
 
   ### Agenda voor meeting

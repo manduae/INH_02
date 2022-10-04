@@ -40,6 +40,17 @@ body {
   background-color:var(--color-background);
 }
 
+section {
+    
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center center;
+    
+}
+
 
 /****************/
 /* ALGEMENE CODE HEADER */
