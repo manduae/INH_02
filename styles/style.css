@@ -35,6 +35,8 @@ button, summary {
 /****************/
 
 
+@media (min-width:600px){}
+    
 body {
   color:var(--color-text);
   background-color:var(--color-background);
@@ -51,16 +53,6 @@ section {
     background-position: center center;
     
     
-    
-}
-
-section ul {
-    
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-gap: 20px;
-    
 }
 
 
@@ -75,12 +67,16 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    position:sticky;
     padding-top: 1vh;
+    align-items:center;
     
 /* bron: https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable voor het gebruiken van rgb code voor opacity ipv HEX */    
     
     background-color: rgba(var(--color-header-background), 0.7);
-  
+    padding:0 1em;
+    background-image:var(--header-gradient);
+
 }
 
 header a img {
@@ -93,11 +89,15 @@ header a img {
 }
 
 header ul {
-    
     display: flex;
-    align-items:center;
-    
+    align-items: center;
 }
+
+
+nav {
+    display:flex;
+}
+
 
 nav li a {
     
@@ -110,3 +110,13 @@ nav li a {
     font-size: 14px;
     
 }
+
+ul {
+    display: block;
+    list-style-type: disc;
+}
+
+nav ul li {
+    list-style: none;
+}
+
