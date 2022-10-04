@@ -22,6 +22,7 @@ button, summary {
 	--color-text:#000;
     --color-heading:#13670B;
 	--color-background:#eee;
+    --color-menu-background:15, 63, 10;
     --color-header-text:#fff;
     --color-header-background: 102, 102, 102;
 }
@@ -34,12 +35,11 @@ button, summary {
 /* ALGEMENE CODE */
 /****************/
 
-
-@media (min-width:600px){}
     
 body {
   color:var(--color-text);
   background-color:var(--color-background);
+  margin: 0;
 }
 
 section {
@@ -62,10 +62,11 @@ section {
 
 /* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 
+@media (min-width:600px){}
+
 header {
   
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     position:sticky;
     padding-top: 1vh;
@@ -89,13 +90,35 @@ header a img {
 }
 
 header ul {
-    display: flex;
     align-items: center;
 }
 
 
-nav {
-    display:flex;
+nav { 
+    position: fixed;
+    bottom:0;
+    top:0;
+    right:0;
+    left:0;
+    background-color: rgba(var(--color-menu-background), 0.9);
+    transform:translateX(-98%);
+  
+  /* JOUW CODE HIER - stap 2 */
+  
+  
+  /* JOUW CODE HIER - stap 4 */
+  transition:1s;
+  
+}
+
+/* als menu open is */
+nav.open {
+  /* JOUW CODE HIER - stap 4 */
+  
+  transform:translateX(0%);
+  
+}
+    
 }
 
 
