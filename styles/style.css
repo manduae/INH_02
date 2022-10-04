@@ -42,12 +42,24 @@ body {
 
 section {
     
+    
+    
     height: 100vh;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     background-position: center center;
+    
+    
+    
+}
+
+section ul {
+    
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-gap: 20px;
     
 }
 
