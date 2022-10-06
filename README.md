@@ -148,6 +148,12 @@ Voortgang
 
   ### Stand van zaken
   Tijdens mijn CSS proces kwam ik tot een aantal inzichtelijke conclusies. Omdat ik per breakpoint ging inspecteren, kwam ik erachter dat sommige sections weggehaald kon worden en de content hierin samengevoegd kom worden. Ik ben nu op het punt om de verschillende sections met daarin de ul en li items aan te spreken met NTH-of-type. Hier wil ik graag feedback voor ontvangen zodat ik hiermee gestructueerd verder kan. Verder is mijn navbar nu voor 80% goed. Overige 20% is de styling van de list items en de aligning bij een grotere breakpoint dan mobiel.
+  
+  Wat betreft mijn navbar, ik krijg het vlaggetje nog niet mooi uitgelijnd met de andere li items. Om 1 of andere reden krijg ik de margin van het vlaggetje niet links uitgelijnd.
+  
+  <img src="readme-images/voortgang_vlag.png" width="375px" alt="voortgang_vlag">
+  
+  Verder heb ik wel voortgang geboekt met het gebruik van nth-of-type (in dit geval nth-of-type(7) img) toe te passen om zo het vlaggetje aan te roepen in het menu. Dit helpt veel. Echter wil ik graag feedback hoe ik dit kan toepassen op mijn sections.
 
 
   ### Agenda voor meeting
