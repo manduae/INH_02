@@ -70,6 +70,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
   #### Muis en Toetsenbord 
   De taps zijn over het algemeen wel logisch, echter slaat de screenreader hele blokken over zonder de context te vermelden waar je je bevindt als gebruiker.
   
+<details>
 
 Ontvangen test van Giorgio:
 
@@ -80,6 +81,8 @@ Ontvangen test van Giorgio:
 <img src="readme-images/giorgio5.png" width="175px" alt="breakdownschets">
 
 Text nog te ontvangen.
+
+</details>
 
 <details open>
 
@@ -143,7 +146,8 @@ Voortgang
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
+    
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
