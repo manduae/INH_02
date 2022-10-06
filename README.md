@@ -172,7 +172,7 @@ Voortgang
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - punt 1: Bij het schrijven van rgb codes moet je letten op het verschil van de oude en de nieuwe manier. Bij de nieuwe manier laat je comma's achterwege en vervang je deze met een "/". Door deze aanpassing kwam de achtergrond van het menu weer naar boven.
   - punt 2
   - nog een punt
   - ...
