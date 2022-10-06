@@ -18,13 +18,14 @@ button, summary {
 /*********************/
 
 :root {
-	/* startje */
+    
 	--color-text:#000;
-    --color-heading:#13670B;
+    --color-heading-text:#13670B;
 	--color-background:#eee;
     --color-menu-background:15 63 10;
     --color-header-text:#fff;
     --color-header-background: 102 102 102;
+    
 }
 
 
@@ -42,8 +43,14 @@ body {
   margin: 0;
 }
 
-section {
+section:nth-of-type(1)  {
     
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section {
     
     
     height: 100vh;
@@ -54,6 +61,7 @@ section {
     
     
 }
+
 
 
 /****************/
@@ -72,7 +80,7 @@ header {
     padding-top: 1vh;
     align-items:center;
     
-/* bron: https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable voor het gebruiken van rgb code voor opacity ipv HEX */    
+/* bron: https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable voor het gebruiken van rgb code voor opacity ipv een HEX-code */    
     
     background-color: rgba(var(--color-header-background), 0.7);
     padding:0 1em;
@@ -81,21 +89,24 @@ header {
 
 }
 
+header a {
+    display: flex;
+}
+
+
 header a:nth-of-type(1) img {
      
-    display: flex;
+    position: relative;
     width: 120px;
-    padding-left: 2em;
-    padding-top: 2em;
     
 }
 
 /* Vlaggetje in het menu */
 
 header ul li:nth-of-type(7) img {
-    width: 50px;
-    height: 50px;
-    margin-left: 0em;
+    
+    width: 1.25em;
+    height: 1.25em;
 }
 
 header > button {
@@ -156,6 +167,13 @@ nav li a {
     
 }
 
-
+section:nth-of-type(2) h2 {
+    
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    color:var(--color-heading-text);
+    padding: 0 1.125rem;
+}
 
 

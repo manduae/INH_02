@@ -157,7 +157,7 @@ Voortgang
   
   <img src="readme-images/voortgang_vlag.png" width="375px" alt="voortgang_vlag">
   
-  Verder heb ik wel voortgang geboekt met het gebruik van nth-of-type (in dit geval nth-of-type(7) img) toe te passen om zo het vlaggetje aan te roepen in het menu. Dit helpt veel. Echter wil ik graag feedback hoe ik dit kan toepassen op mijn sections.
+  Verder heb ik wel voortgang geboekt met het gebruik van nth-of-type (in dit geval nth-of-type(7) img) toe te passen om zo het vlaggetje aan te roepen in het menu. Dit helpt veel. Echter wil ik graag feedback hoe ik dit kan toepassen op mijn sections met de bijbehorende ul, li en items in de list items.
 
 
   ### Agenda voor meeting
