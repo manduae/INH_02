@@ -30,8 +30,13 @@ button, summary {
     --color-menu-background:15 63 10;
     --color-header-text:#fff;
     --color-header-background: 102 102 102;
+    --color-witte-titel:#fff;
+    --color-kleine-text:#ffffffb3;
+    --color-blokinblok-background:15 63 10;
     --font-size-h2:36px;
     --font-size-h3:10px;
+    --font-size-witte-titel:18px;
+    --font-size-kleine-tekst:10px;
 }
 
 
@@ -237,25 +242,38 @@ section:nth-of-type(2) ul li:nth-of-type(1) {
     
 	grid-column-start:1; /* van de eerste lijn */
 	grid-column-end:-1; /* tot de laatste lijn */
-
+    display: flex;
+    padding: 1.125rem;
+    align-items: flex-end;
+    background-image: 
 }
 
-/* BLOKJE 1 -> BLOK-IN-BLOK */
+/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
 
 section:nth-of-type(2) ul li:nth-of-type(1) div {
     
     display: block;
     position: relative;
     width: 50%;
+    background-color: rgba(var(--color-blokinblok-background) / 0.3);
+    padding: 0.5625em;
 }
 
-/* BLOKJE 1 -> BLOK-IN-BLOK -> Witte tekst */
+/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
 
 section:nth-of-type(2) ul li:nth-of-type(1) div p:nth-of-type(1) {
     
     margin: 0;
+    font-size:var(--font-size-witte-titel);
+    color:var(  --color-witte-titel);
+}
+
+section:nth-of-type(2) ul li:nth-of-type(1) div p:nth-of-type(2) {
     
-    
+    margin: 0;
+    font-size:var(--font-size-kleine-tekst);
+    color:var(--color-kleine-text);
+    padding-top:0.3125em;
 }
 
 
