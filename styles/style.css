@@ -164,7 +164,7 @@ ul {
 }
 
 nav ul li {
-    padding: 16px;
+    padding: 16pxed
 }
 
 nav li a {
@@ -191,6 +191,20 @@ section:nth-of-type(2) h2 {
     color:var(--color-heading-text);
     padding: 0 1.125rem;
 }
+
+section:nth-of-type(2) ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:1em;
+}
+
+section:nth-of-type(2) ul li:nth-of-type(1) {
+	grid-column-start:1; /* van de eerste lijn */
+	grid-column-end:-1; /* tot de laatste lijn */
 
 
 
