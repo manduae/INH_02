@@ -245,7 +245,7 @@ section:nth-of-type(2) ul li:nth-of-type(1) {
     display: flex;
     padding: 1.125rem;
     align-items: flex-end;
-    background-image: 
+    background-color: dimgrey;
 }
 
 /* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
@@ -275,6 +275,71 @@ section:nth-of-type(2) ul li:nth-of-type(1) div p:nth-of-type(2) {
     color:var(--color-kleine-text);
     padding-top:0.3125em;
 }
+
+
+/* BLOKJE 2 - ACHTERGROND */
+
+section:nth-of-type(2) ul li:nth-of-type(2) {
+    
+    display: flex;
+    padding: 1.125rem;
+    align-items: flex-end;
+    background-color: dimgrey;
+}
+
+/* BLOKJE 2 -> GROEN-BLOKJE-IN-BLOK */
+
+section:nth-of-type(2) ul li:nth-of-type(2) div {
+    
+    display: block;
+    position: relative;
+    width: 50%;
+    background-color: rgba(var(--color-blokinblok-background) / 0.3);
+    padding: 0.5625em;
+}
+
+/* BLOKJE 2 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
+
+section:nth-of-type(2) ul li:nth-of-type(2) div p:nth-of-type(1) {
+    
+    margin: 0;
+    font-size:var(--font-size-witte-titel);
+    color:var(  --color-witte-titel);
+}
+
+/* BLOKJE 3 - ACHTERGROND */
+
+section:nth-of-type(2) ul li:nth-of-type(3) {
+    
+    display: flex;
+    padding: 1.125rem;
+    align-items: flex-end;
+    background-color: dimgrey;
+}
+
+/* BLOKJE 3 -> GROEN-BLOKJE-IN-BLOK */
+
+section:nth-of-type(2) ul li:nth-of-type(3) div {
+    
+    display: block;
+    position: relative;
+    width: 50%;
+    background-color: rgba(var(--color-blokinblok-background) / 0.3);
+    padding: 0.5625em;
+}
+
+/* BLOKJE 3 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
+
+section:nth-of-type(2) ul li:nth-of-type(3) div p:nth-of-type(1) {
+    
+    margin: 0;
+    font-size:var(--font-size-witte-titel);
+    color:var(  --color-witte-titel);
+}
+
+
+
+
 
 
 
