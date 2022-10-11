@@ -186,6 +186,15 @@ section:nth-of-type(1)  {
     
 }
 
+
+
+
+
+/* ////// SECTION 2 ////// */
+
+
+/* H2 */
+
 section:nth-of-type(2) h2 {
     
     display: block;
@@ -196,6 +205,8 @@ section:nth-of-type(2) h2 {
     padding:0 16px;
 }
 
+/* H3 */
+
 section:nth-of-type(2) h3 {
     
     display: block;
@@ -205,6 +216,8 @@ section:nth-of-type(2) h3 {
     font-size:var(--font-size-h3);
     
 }
+
+/* GRIDBOX */
 
 section:nth-of-type(2) ul {
     
@@ -218,6 +231,8 @@ section:nth-of-type(2) ul {
     
 }
 
+/* BLOKJE 1 - ACHTERGROND */
+
 section:nth-of-type(2) ul li:nth-of-type(1) {
     
 	grid-column-start:1; /* van de eerste lijn */
@@ -225,6 +240,7 @@ section:nth-of-type(2) ul li:nth-of-type(1) {
 
 }
 
+/* BLOKJE 1 -> BLOK-IN-BLOK */
 
 section:nth-of-type(2) ul li:nth-of-type(1) div {
     
@@ -233,9 +249,13 @@ section:nth-of-type(2) ul li:nth-of-type(1) div {
     width: 50%;
 }
 
-section:nth-of-type(2) ul li:nth-of-type(1) div p {
+/* BLOKJE 1 -> BLOK-IN-BLOK -> Witte tekst */
+
+section:nth-of-type(2) ul li:nth-of-type(1) div p:nth-of-type(1) {
     
     margin: 0;
+    
+    
 }
 
 
