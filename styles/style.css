@@ -29,7 +29,7 @@ button, summary {
     --color-menu-background:15 63 10;
     --color-header-text:#fff;
     --color-header-background: 102 102 102;
-    
+    --font-size-h2:36px;
 }
 
 
@@ -190,6 +190,8 @@ section:nth-of-type(2) h2 {
     margin-bottom: 1rem;
     margin-top: 0;
     color:var(--color-heading-text);
+    font-size:var(--font-size-h2);
+    padding:0 16px;
 }
 
 section:nth-of-type(2) ul {
@@ -207,5 +209,13 @@ section:nth-of-type(2) ul li:nth-of-type(1) {
 	grid-column-start:1; /* van de eerste lijn */
 	grid-column-end:-1; /* tot de laatste lijn */
 
+}
 
+
+section:nth-of-type(2) ul li:nth-of-type(1) div {
+    
+    display: block;
+    position: relative;
+    width: 50%;
+}
 
