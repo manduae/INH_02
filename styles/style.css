@@ -245,7 +245,9 @@ section:nth-of-type(2) ul li:nth-of-type(1) {
     display: flex;
     padding: 1.125rem;
     align-items: flex-end;
-    background-image: 
+    background-image: url(../images/heineken_history.jpeg);
+    background-size: cover;
+    
 }
 
 /* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
@@ -255,7 +257,7 @@ section:nth-of-type(2) ul li:nth-of-type(1) div {
     display: block;
     position: relative;
     width: 50%;
-    background-color: rgba(var(--color-blokinblok-background) / 0.3);
+    background-color: rgba(var(--color-blokinblok-background) / 0.7);
     padding: 0.5625em;
 }
 
@@ -285,6 +287,8 @@ section:nth-of-type(2) ul li:nth-of-type(2) {
     padding: 1.125rem;
     align-items: flex-end;
     background-color: dimgrey;
+    background-image: url(../images/duurzaam_bg.jpeg);
+    background-size: cover;
 }
 
 /* BLOKJE 2 -> GROEN-BLOKJE-IN-BLOK */
@@ -294,7 +298,7 @@ section:nth-of-type(2) ul li:nth-of-type(2) div {
     display: block;
     position: relative;
     width: 50%;
-    background-color: rgba(var(--color-blokinblok-background) / 0.3);
+    background-color: rgba(var(--color-blokinblok-background) / 0.7);
     padding: 0.5625em;
 }
 
@@ -315,6 +319,8 @@ section:nth-of-type(2) ul li:nth-of-type(3) {
     padding: 1.125rem;
     align-items: flex-end;
     background-color: dimgrey;
+    background-image: url(../images/bouwproces_bg.jpeg);
+    background-size: cover;
 }
 
 /* BLOKJE 3 -> GROEN-BLOKJE-IN-BLOK */
@@ -324,7 +330,7 @@ section:nth-of-type(2) ul li:nth-of-type(3) div {
     display: block;
     position: relative;
     width: 50%;
-    background-color: rgba(var(--color-blokinblok-background) / 0.3);
+    background-color: rgba(var(--color-blokinblok-background) / 0.7);
     padding: 0.5625em;
 }
 
