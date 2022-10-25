@@ -37,6 +37,8 @@ button, summary {
     --font-size-h3:10px;
     --font-size-witte-titel:18px;
     --font-size-kleine-tekst:10px;
+    --font-size-h1-titel:40px;
+    --font-size-intro-titel:12px;
 }
 
 
@@ -59,7 +61,7 @@ body {
 section {
     
     
-    height: 100vh;
+    height: 75vh;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,7 +92,8 @@ header {
   
     display: flex;
     justify-content: space-between;
-    position:sticky;
+    position: fixed;
+    width: 100%;
     padding-top: 1vh;
     align-items:center;
     
@@ -129,6 +132,7 @@ header > button:nth-of-type(1) {
     
     position: relative;
     z-index:200;
+    
 }
 
 
@@ -232,9 +236,58 @@ button:nth-of-type(3) {
     border-radius: 8px;
     box-shadow: rgb(0 0 0 / 50%) 0px 4px 12px;
     
+    
+    
 }
 
+/* ////// SECTION 1 ////// */
 
+section:nth-of-type(1) ul {
+    
+    margin-top:85%;
+	padding:0 1em;
+	list-style:none;
+	
+	display:grid;
+	grid-template-columns: 1fr;
+    
+}
+
+section:nth-of-type(1) ul li p {
+    
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size:var(--font-size-intro-titel);
+    color:var(  --color-witte-titel);
+    
+}
+
+section:nth-of-type(1) h1 {
+    
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size:var(--font-size-h1-titel);
+    color:var(  --color-witte-titel);
+    
+}
+
+section:nth-of-type(1) a {
+    
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    letter-spacing: .031875rem;
+    padding: 0.9375rem 1.25rem;
+    margin: 30 0 0;
+    text-align: center;
+    
+}
 
 /* ////// SECTION 2 ////// */
 
