@@ -179,6 +179,36 @@ Voortgang
 
 </details>
 
+## Laatste voortganggesprek
+
+<details open>
+
+  ### Stand van zaken
+  tekst hier
+  
+  <img src="readme-images/voortgang_vlag.png" width="375px" alt="voortgang_vlag">
+  
+  tekst hier
+
+  ### Agenda voor meeting
+  samen met je groepje opstellen
+
+  Emilio: Footer: CSS - Label & Input + Animeren Button 
+  Giorgio: Ik wil het hebben over responsive maken omdat ik geen surface plain doe. En mijn pagina tot nu toe
+  Hendriks: media queries en onverwachte spacing/padding/margins die nergens thuis horen + hoe je twee losse CSS dingen maakt
+  Jesse: ik wil de CSS bespreken van m’n tweede pagina, en nog wat JS/Surface plande dingetjes
+
+
+  ### Verslag van meeting
+  hier na afloop snel de uitkomsten van de meeting vastleggen
+
+  - punt 1: Bij het schrijven van rgb codes moet je letten op het verschil van de oude en de nieuwe manier. Bij de nieuwe manier laat je comma's achterwege en vervang je deze met een "/". Door deze aanpassing kwam de achtergrond van het menu weer naar boven.
+  - punt 2
+  - nog een punt
+  - ...
+
+</details>
+
 
 
 
