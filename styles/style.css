@@ -33,13 +33,14 @@ button, summary {
     --color-witte-titel:#fff;
     --color-kleine-text:#ffffffb3;
     --color-blokinblok-background:15 63 10;
+    --color-background-footer:#01541C;
     --font-size-h2:36px;
     --font-size-h3:10px;
     --font-size-witte-titel:18px;
     --font-size-kleine-tekst:10px;
     --font-size-h1-titel:40px;
     --font-size-intro-titel:12px;
-    --footer-background-color:radial-gradient(circle, rgba(0,162,31,1) 0%, rgba(12,66,0,1) 100%); 
+    --footer-background-color:radial-gradient(circle, rgba(0,162,31,1) 0%, rgba(0,136,32,1) 0%, rgba(0,98,32,1) 47%); 
     --footer-tekst-size:14px;
 }
 
@@ -122,7 +123,7 @@ a {
     text-decoration:none;
 }
 
-a::after {
+nav a::after {
     content:"";
     position: absolute;
     left: 0;
@@ -136,7 +137,7 @@ a::after {
 
 }
 
-a:hover::after {
+nav a:hover::after {
     transform:scaleX(100%);
 }
 
@@ -373,6 +374,7 @@ section:nth-of-type(2) ul li:nth-of-type(1) {
     align-items: flex-end;
     background-image: url(../images/heineken_history.jpeg);
     background-size: cover;
+    min-height: 250px;
     
 }
 
@@ -415,6 +417,7 @@ section:nth-of-type(2) ul li:nth-of-type(2) {
     background-color: dimgrey;
     background-image: url(../images/duurzaam_bg.jpeg);
     background-size: cover;
+    height: 170px;
 }
 
 /* BLOKJE 2 -> GROEN-BLOKJE-IN-BLOK */
@@ -423,7 +426,7 @@ section:nth-of-type(2) ul li:nth-of-type(2) div {
     
     display: block;
     position: relative;
-    width: 50%;
+    width: 100%;
     background-color: rgba(var(--color-blokinblok-background) / 0.7);
     padding: 0.5625em;
 }
@@ -447,6 +450,7 @@ section:nth-of-type(2) ul li:nth-of-type(3) {
     background-color: dimgrey;
     background-image: url(../images/bouwproces_bg.jpeg);
     background-size: cover;
+    height: 170px;
 }
 
 /* BLOKJE 3 -> GROEN-BLOKJE-IN-BLOK */
@@ -455,7 +459,7 @@ section:nth-of-type(2) ul li:nth-of-type(3) div {
     
     display: block;
     position: relative;
-    width: 50%;
+    width: 100%;
     background-color: rgba(var(--color-blokinblok-background) / 0.7);
     padding: 0.5625em;
 }
@@ -497,6 +501,7 @@ section:nth-of-type(3) ul li:nth-of-type(1) {
     align-items: flex-end;
     background-image: url(../images/manmethand.jpeg);
     background-size: cover;
+    min-height: 200px;
     
 }
 
@@ -537,6 +542,7 @@ section:nth-of-type(3) ul li:nth-of-type(2) {
     align-items: flex-end;
     background-image: url(../images/omhelsing.png);
     background-size: cover;
+    min-height: 200px;
     
 }
 
@@ -582,6 +588,33 @@ section:nth-of-type(3) h3 {
 /* ////// FOOTER ////// */
 
 
+footer > section ul:nth-of-type(1) h2 {
+    
+    color: #fff;
+    font-size: 1.125rem;
+    opacity: .4;
+    
+}
+
+footer > section ul:nth-of-type(1) input:nth-of-type(1) {
+
+    border-radius: 0.25rem 0 0 0.25rem;
+    cursor: pointer;
+    flex: 7.8;
+    font-size: 1rem;
+    overflow: hidden;
+    
+}
+
+footer > section ul:nth-of-type(1) input:nth-of-type(2) {
+
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+    flex: 2.2;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    
+}
 
 footer > section ul:nth-of-type(1) {
     
@@ -594,9 +627,9 @@ footer > section ul:nth-of-type(1) {
     background-position: center center;
     display: flex;
     flex-direction: column;
-    background-color:var(--footer-background-color);
+    background-image:var(--footer-background-color);
     background-size: cover;
-    margin-bottom: 3.75rem;
+    
     
 }
 
@@ -604,22 +637,24 @@ footer > section ul:nth-of-type(2) {
     
     margin-top: 0;
     padding: 2.25em;
-    height: 20em;
+    height: 100%;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
     flex-direction: column;
-    background-color:var(--footer-background-color);
+    background-color:var(--color-background-footer);
     background-size: cover;
-    margin-bottom: 3.75rem;
     
 }
 
-footer ul:nth-of-type(2) img {
+footer ul:nth-of-type(2) li img {
     
-    width: 84px;
+    width: 84px; /* bah bah bah bah bah pixels */
+    display:block;
+    margin:0 auto;
+    padding-bottom: 3.75em;
     
 }
 
@@ -628,3 +663,30 @@ footer ul:nth-of-type(2) li a {
     font-size:var(--footer-tekst-size);
     margin: 0 0 1em;
     padding: 0;
+    
+}
+    
+footer > section ul:nth-of-type(3) {
+    
+    margin-top: 0;
+    padding: 2.25em;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--color-background-footer);
+    background-size: cover;
+    margin-bottom: 3.75rem;
+
+}
+
+footer > section ul:nth-of-type(3) img {
+    
+    display: block;
+    height: 1em
+        
+}
+    
