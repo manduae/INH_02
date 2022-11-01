@@ -35,6 +35,9 @@ button, summary {
     --color-kleine-text:#ffffffb3;
     --color-blokinblok-background:15 63 10;
     --color-background-footer:#01541C;
+    --color-main-button: 255 255 255;
+    --color-background-button:#ccc;
+    --color-background-footer-input: 255 255 255;
     --footer-background-color:radial-gradient(circle, rgba(0,162,31,1) 0%, rgba(0,136,32,1) 0%, rgba(0,98,32,1) 47%);
     --footer-background-linear-gradient:linear-gradient(0deg, rgba(0,162,31,1) 0%, rgba(0,19,4,1) 0%, rgba(0,61,18,1) 47%, rgba(1,84,28,1) 100%);
     --font-size-h2:36px;
@@ -63,7 +66,8 @@ button, summary {
 
 * {
     margin:0px;
-  padding:0px;
+    padding:0px;
+    max-width: 338px;
     
 }    
 
@@ -182,13 +186,13 @@ header a:nth-of-type(1) img {
 header ul li:nth-of-type(7) img {
     
     width: 1.25em;
-    height: 1.25em;
 }
 
 header > button:nth-of-type(1) {
     
     position: relative;
     z-index:200;
+    width: 2em;
     
 }
 
@@ -260,10 +264,28 @@ main > section:nth-of-type(1)  {
     
 }
 
+
+
+
+main > section:nth-of-type(1) a:nth-of-type(1) {
+    
+    border: 0;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    letter-spacing: .031875rem;
+    padding: 0.9375rem 1.25rem;
+    text-align: center;
+    width:14rem;
+    background-color:rgb(var(--color-main-button) / 0.3);
+    
+}
+
 main > button:nth-of-type(1) {
     
     border: 0;
-    color: #fff;
+    color:var(--color-witte-titel);
+    background-color:var(--color-background-button);
     cursor: pointer;
     display: block;
     font-weight: 700;
@@ -283,7 +305,8 @@ main > button:nth-of-type(1) {
 main > button:nth-of-type(2) {
     
     border: 0;
-    color: #fff;
+    color:var(--color-witte-titel);
+    background-color:var(--color-background-button);
     cursor: pointer;
     display: block;
     font-weight: 700;
@@ -751,9 +774,8 @@ footer > section ul:nth-of-type(3) {
     background-position: center center;
     display: flex;
     flex-direction: column;
-    background-color:var(--footer-background-linear-gradient);
+    background-image:var(--footer-background-linear-gradient);
     background-size: cover;
-    margin-bottom: 3.75rem;
 
 }
 
@@ -773,10 +795,35 @@ footer > section ul:nth-of-type(3) linth-of-type(2) label {
 input[type"email"] {
     
     width: 50%;
+    
 }
 
 label:nth-of-type(1) {
     display: none;
 }
 
+footer div {
     
+    display: flex;
+}
+
+footer input:nth-of-type(1) {
+    
+    background-color:rgb(var(--color-background-footer-input) / 0.1);
+    border: 0.0625rem solid rgba(255,255,255,.2);
+    border-radius: 1;
+    padding: 0.6875rem 1.25rem;
+    max-width: 10rem;
+    
+}
+
+footer input:nth-of-type(2) {
+    
+    background-color:rgb(var(--color-background-footer-input) / 0.5);
+    border: 0;
+    border-radius: 0.25rem;
+    color: #fff;
+    letter-spacing: .03125rem;
+    padding: 0.625rem 1.25rem;
+    
+}
