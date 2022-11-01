@@ -202,14 +202,42 @@ Voortgang
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1: Bij het schrijven van rgb codes moet je letten op het verschil van de oude en de nieuwe manier. Bij de nieuwe manier laat je comma's achterwege en vervang je deze met een "/". Door deze aanpassing kwam de achtergrond van het menu weer naar boven.
-  - punt 2
-  - nog een punt
-  - ...
+  - H1 en P verwisselen (met -1 ask Giorgio)
+  - Filter erop gooien
+  - Footer h2 nodig en weghalen met "display non"
+  -
 
 </details>
 
+<details open>
+    
+  <summary>Usability testing 01-11-2022</summary>
+  
+   ### Screenreader:
+   
+  Wat betreft de screenreader
+   
+   ### Muis & toetsenbord:
+   
+  Met het tappen vraag ik mij af hoe ik via de menu/button naar de linkjes ga in de lijst. Ook ga je als user vanaf het hamburger menu naar de fixed buttons onderaan de pagina. Als je enter klikt, schuift het menu wel open, echter als je verder tikt met tap, slaat ie de li items over met de a'tjes er in. 
+   
 
+  ### Visual eye simulator bril:
+  
+  Jesse: 
+  
+  Peripheral field loss: 
+  Met deze bril kan je minder goed het contrast zien van de tekst. Het is lastig om te focussen bij lichtere afbeeldingen. 
+  
+  Blur/Glare: Met deze bril lukte het niet goed om de tekst te lezen vanwege de grote. Gelukkig kon ik de titels wel lezen. Verder waren de achtergronden en afbeeldingen wel vaag te zien vanwege de felle kleuren. 
+  
+  Combined Loss Diabetic: Vanwege de flokken in je gezichtsveld is het lastig om de focus te houden. Je ziet veel afleiding wat niet helpt bij het verwezelijken van je doel.
+
+
+  ### Dit ging goed/Heb ik geleerd: 
+  Korte omschrijving met plaatjes
+
+</details>
 
 
 

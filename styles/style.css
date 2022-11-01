@@ -38,6 +38,9 @@ button, summary {
     --color-main-button: 255 255 255;
     --color-background-button:#ccc;
     --color-background-footer-input: 255 255 255;
+    --button-background-focus-color:#13670B;
+    --button-background-active-color:#13670B;
+    --button-border-color:#13670B;
     --footer-background-color:radial-gradient(circle, rgba(0,162,31,1) 0%, rgba(0,136,32,1) 0%, rgba(0,98,32,1) 47%);
     --footer-background-linear-gradient:linear-gradient(0deg, rgba(0,162,31,1) 0%, rgba(0,19,4,1) 0%, rgba(0,61,18,1) 47%, rgba(1,84,28,1) 100%);
     --font-size-h2:36px;
@@ -67,7 +70,6 @@ button, summary {
 * {
     margin:0px;
     padding:0px;
-    max-width: 338px;
     
 }    
 
@@ -91,13 +93,6 @@ main > section {
     
 }
 
-/* textgrootes etc toevoegn */
-
-/* buttons styling toevoegn */
-
-/* font styling etc toevoegn */
-
-/* states etc toevoegn */
 
 
 
@@ -107,7 +102,6 @@ main > section {
 
 /* bron: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
 
-@media (min-width:32em){}
 
 header {
   
@@ -180,6 +174,49 @@ header a:nth-of-type(1) img {
     padding-top: 0.3em;
     
 }
+
+section:nth-of-type(1) a {
+    
+    /* om het standaard randje bij focus niet te tonen */
+  outline:none;
+  /* nodig voor telefoons */
+  appearance:none;
+  
+  transition:.1s;
+    
+}
+
+section:nth-of-type(1) a:hover,
+section:nth-of-type(1) a:focus-visible {
+  transform:translatey(-.2em);
+  box-shadow:
+    0 .2em var(--button-border-color), 
+    inset 0 0 var(--button-border-color); 
+}
+
+section:nth-of-type(1) a:hover {
+  /* standaard verandert de cursor niet :-( */
+  cursor:pointer;
+}
+
+section:nth-of-type(1) a:focus-visible {
+  background-color:var(--button-background-focus-color);
+}
+
+section:nth-of-type(1) a:active {
+  background-color:var(--button-background-active-color);
+  
+  transform:translatey(0);
+  
+  padding-top:.2em;
+  box-shadow:
+    0 0 var(--button-border-color), 
+    inset 0 .2em var(--button-border-color); 
+}
+
+/* 2 fixed buttons op de pagina */
+
+
 
 /* Vlaggetje in het menu */
 
