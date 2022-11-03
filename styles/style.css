@@ -38,6 +38,8 @@ button, summary {
     --color-main-button: 255 255 255;
     --color-background-button:#ccc;
     --color-background-footer-input: 255 255 255;
+    --dark-modus-background:#121212
+    --accent-color:#fff;
     --button-background-focus-color:#13670B;
     --button-background-active-color:#13670B;
     --button-border-color:#13670B;
@@ -53,13 +55,23 @@ button, summary {
     --footer-tekst-size:14px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme:dark) {
+    :root {
+		--color-background: #121212;
+		--color-text: white;
+	}
+
     img {
         filter:brightness(.85);
     }
     
 }
 
+@media (prefers-reduced-motion: reduce) {
+	main:nth-of-type(1) button:hover {
+	  animation: none;
+	}
+  }
 
 
 
@@ -109,17 +121,19 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    padding-top: 1vh;
     align-items:center;
     
 /* bron: https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable voor het gebruiken van rgb code voor opacity ipv een HEX-code */    
     
     background-color: rgba(var(--color-header-background) / 0.6);
-    padding:0 1em;
     background-image:var(--header-gradient);
     z-index: 100;
     backdrop-filter: blur(3px);
     
+}
+
+header a:nth-last-of-type(1) {
+    padding-left: 1em;
 }
 
 
@@ -192,6 +206,8 @@ section:nth-of-type(1) a:focus-visible {
   box-shadow:
     0 .2em var(--button-border-color), 
     inset 0 0 var(--button-border-color); 
+    background-image:var(--footer-background-linear-gradient);
+    
 }
 
 section:nth-of-type(1) a:hover {
@@ -239,7 +255,23 @@ main > button:hover {
     }
 }
 
+/* Nav hover */
 
+footer ul:nth-last-of-type(2) a {
+    
+    text-decoration:none;
+  transition:.5s;
+    
+}
+
+footer ul:nth-last-of-type(2) a:is(:hover, :focus-visible) {
+  box-shadow:0 .0.7em 0 var(--accent-color);
+}
+
+
+footer ul:nth-last-of-type(2) a:active {
+  --link-color:var(--accent-color);
+}
 
 /* Vlaggetje in het menu */
 
@@ -253,6 +285,7 @@ header > button:nth-of-type(1) {
     position: relative;
     z-index:200;
     width: 2em;
+    margin-right: 1em;
     
 }
 
@@ -729,6 +762,12 @@ section:nth-of-type(3) h3 {
     font-size:var(--font-size-h3);
     font-family: 'PT Sans';
 
+}
+
+main video {
+    
+    width: 100%;
+    padding-bottom: 1em;
 }
 
 /* ////// FOOTER ////// */
