@@ -240,24 +240,6 @@ main > button:hover {
 }
 
 
-/* Zoom-in Images */
-
- section:nth-of-type(2) ul li:nth-of-type(1)  {
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
-        margin: 0 auto;
-    }
-      
-    section:nth-of-type(2) ul li:nth-of-type(1) {
-        width: 100%;
-        transition: 0.5s all ease-in-out;
-    }
-      
-    section:nth-of-type(2) ul li:nth-of-type(1):hover {
-        transform: scale(1.5);
-    }
-
 
 /* Vlaggetje in het menu */
 
@@ -904,5 +886,11 @@ footer input:nth-of-type(2) {
     color: #fff;
     letter-spacing: .03125rem;
     padding: 0.625rem 1.25rem;
+    
+}
+
+footer h2 {
+    
+    display: none;3
     
 }
