@@ -33,6 +33,7 @@ button, summary {
     --color-header-background: 102 102 102;
     --color-witte-titel:#fff;
     --color-kleine-text:#ffffffb3;
+    --color-grijze-text:#999999;
     --color-blokinblok-background:15 63 10;
     --color-background-footer:#01541C;
     --color-main-button: 255 255 255;
@@ -52,6 +53,7 @@ button, summary {
     --font-size-kleine-tekst:10px;
     --font-size-h1-titel:40px;
     --font-size-intro-titel:12px; 
+    --font-size-secondpage-p:16px;
     --footer-tekst-size:14px;
 }
 
@@ -96,7 +98,6 @@ body {
 main > section {
     
     
-    height: 70vh;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -347,6 +348,7 @@ nav li a {
 }
     
 
+
 main > button:nth-of-type(1) {
     
     border: 0;
@@ -397,48 +399,33 @@ main > section:nth-of-type(1)  {
     
     display: flex;
     flex-direction: column;
-    background-image: url(../images/heineken-zilver-blik-in-water-bg.jpeg);
+    background-color:var(--color-background); 
     background-size: cover;
     margin-bottom: 3.75rem;
     
 }
 
 
-
-
-main > section:nth-of-type(1) a:nth-of-type(1) {
+main > section:nth-of-type(1) ul {
     
-    border: 0;
-    cursor: pointer;
-    display: block;
-    font-weight: 700;
-    letter-spacing: .031875rem;
-    padding: 0.9375rem 1.25rem;
-    text-align: center;
-    width:8rem;
-    background-color:rgb(var(--color-main-button) / 0.3);
-    
-}
-
-section:nth-of-type(1) ul {
-    
-    margin-top:85%;
-	padding:0 1em;
+    padding-top:6.75em;
+    padding-left: 2.25em;
+    padding-right: 2.25em;
 	list-style:none;
-	
 	display:grid;
 	grid-template-columns: 1fr;
     
+    
 }
 
-section:nth-of-type(1) ul li p {
+section:nth-of-type(1) p:nth-last-of-type(1) {
     
     margin-top: 0;
     margin-bottom: 10px;
     margin-left: 0;
     margin-right: 0;
     font-size:var(--font-size-intro-titel);
-    color:var(--color-witte-titel);
+    color:var(--color-grijze-text);
     font-family: 'PT Sans';
     
 }
@@ -450,10 +437,22 @@ section:nth-of-type(1) h1 {
     margin-left: 0;
     margin-right: 0;
     font-size:var(--font-size-h1-titel);
-    color:var(  --color-witte-titel);
+    color:var(--color-heading-text);
     font-family: 'Expletus Sans', cursive;
     font-family: 'League Spartan', sans-serif;
     font-family: 'Neuton', serif;
+    
+}
+
+section:nth-of-type(1) p:nth-last-of-type(2) {
+    
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size:var(--font-size-secondpage-p);
+    color:var(--color-grijze-text);
+    font-family: 'PT Sans';
     
 }
 
@@ -472,303 +471,23 @@ section:nth-of-type(1) a {
     
 }
 
-/* ////// SECTION 2 ////// */
 
-
-/* H2 */
-
-section:nth-of-type(2) h2 {
+main section:nth-of-type(1) ul:nth-of-type(2) {
     
-    display: block;
-    margin-bottom: 1rem;
-    margin-top: 0;
-    color:var(--color-heading-text);
-    font-size:var(--font-size-h2);
-    padding:0 16px;
-    font-family: 'Expletus Sans', cursive;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Neuton', serif;
-}
-
-/* H3 */
-
-section:nth-of-type(2) h3 {
-    
-    display: block;
-    margin-bottom: 0.3125em;
-    margin-top: 0;
-    color:var(--color-h3-text);
-    font-size:var(--font-size-h3);
-    font-family: 'PT Sans';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    list-style: none;
     
 }
 
-/* GRIDBOX */
-
-section:nth-of-type(2) ul {
-    
-	margin:0;
-	padding:0 1em;
-	list-style:none;
-	
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap:1em;
-    
-}
-
-/* BLOKJE 1 - ACHTERGROND */
-
-section:nth-of-type(2) ul li:nth-of-type(1) {
-    
-	grid-column-start:1; /* van de eerste lijn */
-	grid-column-end:-1; /* tot de laatste lijn */
-    display: flex;
-    padding: 1.125rem;
-    align-items: flex-end;
-    background-image: url(../images/heineken_history.jpeg);
-    background-size: cover;
-    min-height: 250px;
-    
-    
-}
-
-/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
-
-section:nth-of-type(2) ul li:nth-of-type(1) div {
-    
-    display: block;
-    position: relative;
-    width: 50%;
-    background-color: rgba(var(--color-blokinblok-background) / 0.7);
-    padding: 0.5625em;
-}
-
-/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
-
-section:nth-of-type(2) ul li:nth-of-type(1) div p:nth-of-type(1) {
-    
-    margin: 0;
-    font-size:var(--font-size-witte-titel);
-    color:var(  --color-witte-titel);
-    font-family: 'Expletus Sans', cursive;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Neuton', serif;
-    
-}
-
-section:nth-of-type(2) ul li:nth-of-type(1) div p:nth-of-type(2) {
-    
-    margin: 0;
-    font-size:var(--font-size-kleine-tekst);
-    color:var(--color-kleine-text);
-    padding-top:0.3125em;
-    font-family: 'PT Sans';
-}
-
-
-/* BLOKJE 2 - ACHTERGROND */
-
-section:nth-of-type(2) ul li:nth-of-type(2) {
+main section:nth-last-of-type(1) ul:nth-of-type(2) li {
     
     display: flex;
-    padding: 1.125rem;
-    align-items: flex-end;
-    background-color: dimgrey;
-    background-image: url(../images/duurzaam_bg.jpeg);
-    background-size: cover;
-    height: 170px;
-}
-
-/* BLOKJE 2 -> GROEN-BLOKJE-IN-BLOK */
-
-section:nth-of-type(2) ul li:nth-of-type(2) div {
     
-    display: block;
-    position: relative;
-    width: 100%;
-    background-color: rgba(var(--color-blokinblok-background) / 0.7);
-    padding: 0.5625em;
-}
-
-/* BLOKJE 2 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
-
-section:nth-of-type(2) ul li:nth-of-type(2) div p:nth-of-type(1) {
-    
-    margin: 0;
-    font-size:var(--font-size-witte-titel-kleiner);
-    color:var(  --color-witte-titel);
-    font-family: 'Expletus Sans', cursive;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Neuton', serif;
     
 }
 
-/* BLOKJE 3 - ACHTERGROND */
-
-section:nth-of-type(2) ul li:nth-of-type(3) {
-    
-    display: flex;
-    padding: 1.125rem;
-    align-items: flex-end;
-    background-color: dimgrey;
-    background-image: url(../images/bouwproces_bg.jpeg);
-    background-size: cover;
-    height: 170px;
-}
-
-/* BLOKJE 3 -> GROEN-BLOKJE-IN-BLOK */
-
-section:nth-of-type(2) ul li:nth-of-type(3) div {
-    
-    display: block;
-    position: relative;
-    width: 100%;
-    background-color: rgba(var(--color-blokinblok-background) / 0.7);
-    padding: 0.5625em;
-}
-
-/* BLOKJE 3 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
-
-section:nth-of-type(2) ul li:nth-of-type(3) div p:nth-of-type(1) {
-    
-    margin: 0;
-    font-size:var(--font-size-witte-titel-kleiner);
-    color:var(  --color-witte-titel);
-    font-family: 'Expletus Sans', cursive;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Neuton', serif;
-    
-}
-
-
-
-/* ////// SECTION 3 ////// */
-
-
-/* GRIDBOX */
-
-section:nth-of-type(3) ul {
-    
-	margin-top: 3.75rem;;
-	padding:0 1em;
-	list-style:none;
-	
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap:1em;
-    
-}
-
-section:nth-of-type(3) ul li:nth-of-type(1) {
-    
-	grid-column-start:1; /* van de eerste lijn */
-	grid-column-end:-1; /* tot de laatste lijn */
-    display: flex;
-    padding: 1.125rem;
-    align-items: flex-end;
-    background-image: url(../images/manmethand.jpeg);
-    background-size: cover;
-    min-height: 200px;
-    
-}
-
-/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
-
-section:nth-of-type(3) ul li:nth-of-type(1) div {
-    
-    display: block;
-    position: relative;
-    width: 50%;
-    background-color: rgba(var(--color-blokinblok-background) / 0.7);
-    padding: 0.5625em;
-}
-
-/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
-
-section:nth-of-type(3) ul li:nth-of-type(1) div p:nth-of-type(1) {
-    
-    margin: 0;
-    font-size:var(--font-size-witte-titel);
-    color:var(  --color-witte-titel);
-    font-family: 'Expletus Sans', cursive;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Neuton', serif;
-    
-}
-
-section:nth-of-type(3) ul li:nth-of-type(1) div p:nth-of-type(2) {
-    
-    margin: 0;
-    font-size:var(--font-size-kleine-tekst);
-    color:var(--color-kleine-text);
-    padding-top:0.3125em;
-    font-family: 'PT Sans';
-}
-
-section:nth-of-type(3) ul li:nth-of-type(2) {
-    
-	grid-column-start:1; /* van de eerste lijn */
-	grid-column-end:-1; /* tot de laatste lijn */
-    display: flex;
-    padding: 1.125rem;
-    align-items: flex-end;
-    background-image: url(../images/omhelsing.png);
-    background-size: cover;
-    min-height: 200px;
-    
-}
-
-/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
-
-section:nth-of-type(3) ul li:nth-of-type(2) div {
-    
-    display: block;
-    position: relative;
-    width: 50%;
-    background-color: rgba(var(--color-blokinblok-background) / 0.7);
-    padding: 0.5625em;
-}
-
-/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
-
-section:nth-of-type(3) ul li:nth-of-type(2) div p:nth-of-type(1) {
-    
-    margin: 0;
-    font-size:var(--font-size-witte-titel);
-    color:var(  --color-witte-titel);
-    font-family: 'Expletus Sans', cursive;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Neuton', serif;
-    
-}
-
-section:nth-of-type(3) ul li:nth-of-type(2) div p:nth-of-type(2) {
-    
-    margin: 0;
-    font-size:var(--font-size-kleine-tekst);
-    color:var(--color-kleine-text);
-    padding-top:0.3125em;
-    font-family: 'PT Sans';
-}
-
-
-section:nth-of-type(3) h3 {
-    
-    display: block;
-    margin-bottom: 0.3125em;
-    margin-top: 0;
-    color:var(--color-h3-text);
-    font-size:var(--font-size-h3);
-    font-family: 'PT Sans';
-
-}
-
-main video {
-    
-    width: 100%;
-    padding-bottom: 1em;
-}
 
 /* ////// FOOTER ////// */
 
