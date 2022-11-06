@@ -22,11 +22,12 @@ main > section:nth-of-type(1) ul {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr;
+    background-color:var(--color-background);
 
 
 }
 
-section:nth-of-type(1) p:nth-last-of-type(1) {
+main section:nth-of-type(1) ul p:nth-of-type(1) {
 
     margin-top: 0;
     margin-bottom: 10px;
@@ -35,6 +36,7 @@ section:nth-of-type(1) p:nth-last-of-type(1) {
     font-size: var(--font-size-intro-titel);
     color: var(--color-grijze-text);
     font-family: 'PT Sans';
+    opacity: .3;
 
 }
 

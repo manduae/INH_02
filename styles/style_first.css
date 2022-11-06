@@ -26,17 +26,7 @@ section:nth-of-type(1) ul {
     
 }
 
-section:nth-of-type(1) ul li p {
-    
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    margin-left: 0;
-    margin-right: 0;
-    font-size:var(--font-size-intro-titel);
-    color:var(--color-witte-titel);
-    font-family: 'PT Sans';
-    
-}
+
 
 section:nth-of-type(1) h1 {
     
@@ -52,7 +42,18 @@ section:nth-of-type(1) h1 {
     
 }
 
-
+main section:nth-of-type(1) p {
+    
+    display: block;
+    margin-bottom: 0.625rem;
+    font-size:var(--font-size-intro-titel);
+    font-weight: 700;
+    color:var(--color-header-text);
+    letter-spacing: .075rem;
+    text-transform: uppercase;
+    font-family: 'PT Sans';
+    
+}
 
 
 
@@ -86,7 +87,7 @@ section:nth-of-type(1) a {
     
 }
 
-section:nth-of-type(1) a {
+main section:nth-of-type(1) a {
     
     /* om het standaard randje bij focus niet te tonen */
   outline:none;
@@ -97,8 +98,8 @@ section:nth-of-type(1) a {
     
 }
 
-section:nth-of-type(1) a:hover,
-section:nth-of-type(1) a:focus-visible {
+main section:nth-of-type(1) a:hover,
+main section:nth-of-type(1) a:focus-visible {
   transform:translatey(-.2em);
   box-shadow:
     0 .2em var(--button-border-color), 
@@ -107,16 +108,16 @@ section:nth-of-type(1) a:focus-visible {
     
 }
 
-section:nth-of-type(1) a:hover {
+main section:nth-of-type(1) a:hover {
   /* standaard verandert de cursor niet :-( */
   cursor:pointer;
 }
 
-section:nth-of-type(1) a:focus-visible {
+main section:nth-of-type(1) a:focus-visible {
   background-color:var(--button-background-focus-color);
 }
 
-section:nth-of-type(1) a:active {
+main section:nth-of-type(1) a:active {
   background-color:var(--button-background-active-color);
   
   transform:translatey(0);

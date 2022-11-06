@@ -27,7 +27,7 @@ button, summary {
 	--color-text:#000;
     --color-heading-text:#13670B;
     --color-h3-text:#ffffffb3;
-	--color-background:#eee;
+	--color-background:#fff;
     --color-menu-background:15 63 10;
     --color-header-text:#fff;
     --color-header-background: 102 102 102;
@@ -37,6 +37,7 @@ button, summary {
     --color-background-footer:#01541C;
     --color-main-button: 255 255 255;
     --color-background-button:#ccc;
+    --color-grijze-text:#000;
     --color-background-footer-input: 255 255 255;
     --dark-modus-background:#121212
     --accent-color:#fff;
@@ -133,7 +134,7 @@ header {
 }
 
 header a:nth-last-of-type(1) {
-    padding-left: 1em;
+    margin-left: 1em;
 }
 
 
@@ -176,6 +177,42 @@ header a::after {
 }
 
 nav a:hover::after {
+    transform:scaleX(100%);
+}
+
+footer a::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:100%;
+    height:.1em;
+    background-color:currentColor;
+    
+    transform:scaleX(0%);
+    transition:.3s; 
+
+}
+
+footer a:hover::after {
+    transform:scaleX(100%);
+}
+
+footer a::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:100%;
+    height:.1em;
+    background-color:currentColor;
+    
+    transform:scaleX(0%);
+    transition:.3s; 
+
+}
+
+footer a:hover::after {
     transform:scaleX(100%);
 }
 
@@ -412,12 +449,42 @@ footer > section:nth-of-type(1) a {
     color: #fff;
     cursor: pointer;
     display: block;
-    font-weight: 700;
+    font-weight: 100;
     letter-spacing: .031875rem;
     padding: 0.9375rem 1.25rem;
     margin: 30 0 0;
     text-align: center;
     font-family: 'PT Sans';
+    
+}
+
+footer > section:nth-of-type(1) ul:nth-of-type(1) li p {
+    
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+    margin-right: 0;
+    font-size:var(--font-size-intro-titel);
+    color:var(--color-witte-titel);
+    font-family: 'PT Sans';
+    opacity: .6;
+    
+}
+
+
+footer > section:nth-of-type(1) ul:nth-of-type(3) li p {
+    
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: 8em;
+    margin-right: 0;
+    font-size:var(--font-size-intro-titel);
+    color:var(--color-witte-titel);
+    font-family: 'PT Sans';
+    
+}
+    
+    
     
 }
 
@@ -427,6 +494,7 @@ footer > section ul:nth-of-type(1) li:nth-of-type(3) {
     font-size: 1rem;
     opacity: .5;
     font-size:var(--footer-tekst-size);
+    font-family: 'PT Sans';
     
 }
 
@@ -529,8 +597,4 @@ footer input:nth-of-type(2) {
     
 }
 
-footer h2 {
-    
-    display: none;3
-    
-}
+

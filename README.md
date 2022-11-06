@@ -219,7 +219,11 @@ Voortgang
    
    ### Muis & toetsenbord:
    
-  Met het tappen vraag ik mij af hoe ik via de menu/button naar de linkjes ga in de lijst. Ook ga je als user vanaf het hamburger menu naar de fixed buttons onderaan de pagina. Als je enter klikt, schuift het menu wel open, echter als je verder tikt met tap, slaat ie de li items over met de a'tjes er in. Dit is nu opgelost omdat ik aan mijn pagina een max width had gegeven waardoor ie buiten het beeld verder ging tappen. Nu ik max-width heb weggehaald gaat ie wel volgens logische volgorde. Mijn 2e punt was dat de de tab begint bij
+  Met het tappen vraag ik mij af hoe ik via de menu/button naar de linkjes ga in de lijst. Ook ga je als user vanaf het hamburger menu naar de fixed buttons onderaan de pagina. Als je enter klikt, schuift het menu wel open, echter als je verder tikt met tap, slaat ie de li items over met de a'tjes er in. Dit is nu opgelost omdat ik aan mijn pagina een max width had gegeven waardoor ie buiten het beeld verder ging tappen. Nu ik max-width heb weggehaald gaat ie wel volgens logische volgorde. Mijn 2e punt was dat de de tab niet begint bij het menu bovenaan:
+  
+  <img src="readme-images/testing_screen1.png" width="375px" alt="voortgang_vlag">
+  
+  
    
 
   ### Visual eye simulator bril:
