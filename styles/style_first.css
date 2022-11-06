@@ -386,17 +386,48 @@ section:nth-of-type(3) ul {
     
 }
 
+section:nth-of-type(3) ul li:nth-of-type(1) img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+    filter:brightness(.75);
+    transition:1s;
+}
+
+
+section:nth-of-type(3) ul li:nth-of-type(1):hover img {
+    filter:brightness(1);
+    transform: scale(1.1);
+}
+
+section:nth-of-type(3) ul li:nth-of-type(2) img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+    filter:brightness(.75);
+    transition:1s;
+}
+
+
+section:nth-of-type(3) ul li:nth-of-type(2):hover img {
+    filter:brightness(1);
+    transform: scale(1.1);
+}
+
 section:nth-of-type(3) ul li:nth-of-type(1) {
     
 	grid-column-start:1; /* van de eerste lijn */
 	grid-column-end:-1; /* tot de laatste lijn */
     display: flex;
-    padding: 1.125rem;
     align-items: flex-end;
-    background-image: url(../images/manmethand.jpeg);
-    background-size: cover;
-    min-height: 200px;
+    height: 250px;
+    position: relative;
     
+    overflow:hidden;
+    
+
 }
 
 /* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
@@ -404,10 +435,17 @@ section:nth-of-type(3) ul li:nth-of-type(1) {
 section:nth-of-type(3) ul li:nth-of-type(1) div {
     
     display: block;
-    position: relative;
+    position: absolute;
+    left:1.125rem;
+    bottom:1.125rem;
+    
     width: 50%;
     background-color: rgba(var(--color-blokinblok-background) / 0.7);
     padding: 0.5625em;
+    
+    z-index: 100;
+    
+    
 }
 
 /* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
@@ -437,11 +475,11 @@ section:nth-of-type(3) ul li:nth-of-type(2) {
 	grid-column-start:1; /* van de eerste lijn */
 	grid-column-end:-1; /* tot de laatste lijn */
     display: flex;
-    padding: 1.125rem;
     align-items: flex-end;
-    background-image: url(../images/omhelsing.png);
-    background-size: cover;
-    min-height: 200px;
+    height: 250px;
+    position: relative;
+    
+    overflow:hidden;
     
 }
 
@@ -449,11 +487,16 @@ section:nth-of-type(3) ul li:nth-of-type(2) {
 
 section:nth-of-type(3) ul li:nth-of-type(2) div {
     
-    display: block;
-    position: relative;
+       display: block;
+    position: absolute;
+    left:1.125rem;
+    bottom:1.125rem;
+    
     width: 50%;
     background-color: rgba(var(--color-blokinblok-background) / 0.7);
     padding: 0.5625em;
+    
+    z-index: 100;
 }
 
 /* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
