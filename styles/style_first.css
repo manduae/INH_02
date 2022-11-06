@@ -1,0 +1,454 @@
+/* ////// SECTION 1 ////// */
+
+main > section:nth-of-type(1)  {
+    
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/heineken-zilver-blik-in-water-bg.jpeg);
+    background-size: cover;
+    margin-bottom: 1rem;
+    height: 70vh;
+    
+}
+
+
+
+
+
+section:nth-of-type(1) ul {
+    
+    margin-top:85%;
+	padding:0 1em;
+	list-style:none;
+	
+	display:grid;
+	grid-template-columns: 1fr;
+    
+}
+
+section:nth-of-type(1) ul li p {
+    
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    font-size:var(--font-size-intro-titel);
+    color:var(--color-witte-titel);
+    font-family: 'PT Sans';
+    
+}
+
+section:nth-of-type(1) h1 {
+    
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size:var(--font-size-h1-titel);
+    color:var(  --color-witte-titel);
+    font-family: 'Expletus Sans', cursive;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Neuton', serif;
+    
+}
+
+
+
+
+
+
+main > section:nth-of-type(1) a:nth-of-type(1) {
+    
+    border: 0;
+    cursor: pointer;
+    display: block;
+    letter-spacing: .031875rem;
+    padding: 0.9375rem 1.25rem;
+    text-align: center;
+    width:8rem;
+    background-color:rgb(var(--color-main-button) / 0.3);
+    
+}
+
+
+section:nth-of-type(1) a {
+    
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    letter-spacing: .031875rem;
+    padding: 0.9375rem 1.25rem;
+    margin: 30 0 0;
+    text-align: center;
+    font-family: 'PT Sans';
+    
+}
+
+section:nth-of-type(1) a {
+    
+    /* om het standaard randje bij focus niet te tonen */
+  outline:none;
+  /* nodig voor telefoons */
+  appearance:none;
+  
+  transition:.1s;
+    
+}
+
+section:nth-of-type(1) a:hover,
+section:nth-of-type(1) a:focus-visible {
+  transform:translatey(-.2em);
+  box-shadow:
+    0 .2em var(--button-border-color), 
+    inset 0 0 var(--button-border-color); 
+    background-image:var(--footer-background-linear-gradient);
+    
+}
+
+section:nth-of-type(1) a:hover {
+  /* standaard verandert de cursor niet :-( */
+  cursor:pointer;
+}
+
+section:nth-of-type(1) a:focus-visible {
+  background-color:var(--button-background-focus-color);
+}
+
+section:nth-of-type(1) a:active {
+  background-color:var(--button-background-active-color);
+  
+  transform:translatey(0);
+  
+  padding-top:.2em;
+  box-shadow:
+    0 0 var(--button-border-color), 
+    inset 0 .2em var(--button-border-color); 
+}
+
+
+
+
+
+
+/* ////// SECTION 2 ////// */
+
+
+/* H2 */
+
+section:nth-of-type(2) h2 {
+    
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    color:var(--color-heading-text);
+    font-size:var(--font-size-h2);
+    padding:0 16px;
+    font-family: 'Expletus Sans', cursive;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Neuton', serif;
+}
+
+/* H3 */
+
+section:nth-of-type(2) h3 {
+    
+    display: block;
+    margin-bottom: 0.3125em;
+    margin-top: 0;
+    color:var(--color-h3-text);
+    font-size:var(--font-size-h3);
+    font-family: 'PT Sans';
+    
+}
+
+/* GRIDBOX */
+
+section:nth-of-type(2) ul {
+    
+	margin:0;
+	padding:0 1em;
+	list-style:none;
+	
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:1em;
+    
+}
+
+/* BLOKJE 1 - ACHTERGROND */
+
+section:nth-of-type(2) ul li:nth-of-type(1) {
+    
+	grid-column-start:1; /* van de eerste lijn */
+	grid-column-end:-1; /* tot de laatste lijn */
+    display: flex;
+/*    padding: 1.125rem;*/
+    align-items: flex-end;
+/*    background-image: url(../images/heineken_history.jpeg);*/
+/*    background-size: cover;*/
+    min-height: 250px;
+    position: relative;
+    
+    overflow:hidden;
+    
+}
+
+section:nth-of-type(2) ul li:nth-of-type(1) img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+    filter:brightness(.75);
+    transition:1s;
+}
+
+
+section:nth-of-type(2) ul li:nth-of-type(1):hover img {
+    filter:brightness(1);
+    transform: scale(1.1);
+}
+
+/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
+
+section:nth-of-type(2) ul li:nth-of-type(1) div {
+    
+    display: block;
+    position: absolute;
+    left:1.125rem;
+    bottom:1.125rem;
+    
+    width: 50%;
+    background-color: rgba(var(--color-blokinblok-background) / 0.7);
+    padding: 0.5625em;
+    
+    z-index: 100;
+}
+
+/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
+
+section:nth-of-type(2) ul li:nth-of-type(1) div p:nth-of-type(1) {
+    
+    margin: 0;
+    font-size:var(--font-size-witte-titel);
+    color:var(  --color-witte-titel);
+    font-family: 'Expletus Sans', cursive;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Neuton', serif;
+    
+}
+
+section:nth-of-type(2) ul li:nth-of-type(1) div p:nth-of-type(2) {
+    
+    margin: 0;
+    font-size:var(--font-size-kleine-tekst);
+    color:var(--color-kleine-text);
+    padding-top:0.3125em;
+    font-family: 'PT Sans';
+}
+
+
+/* BLOKJE 2 - ACHTERGROND */
+
+section:nth-of-type(2) ul li:nth-of-type(2) {
+    
+    display: flex;
+    padding: 1.125rem;
+    align-items: flex-end;
+    background-color: dimgrey;
+    background-image: url(../images/duurzaam_bg.jpeg);
+    background-size: cover;
+    height: 170px;
+}
+
+/* BLOKJE 2 -> GROEN-BLOKJE-IN-BLOK */
+
+section:nth-of-type(2) ul li:nth-of-type(2) div {
+    
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: rgba(var(--color-blokinblok-background) / 0.7);
+    padding: 0.5625em;
+}
+
+/* BLOKJE 2 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
+
+section:nth-of-type(2) ul li:nth-of-type(2) div p:nth-of-type(1) {
+    
+    margin: 0;
+    font-size:var(--font-size-witte-titel-kleiner);
+    color:var(  --color-witte-titel);
+    font-family: 'Expletus Sans', cursive;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Neuton', serif;
+    
+}
+
+/* BLOKJE 3 - ACHTERGROND */
+
+section:nth-of-type(2) ul li:nth-of-type(3) {
+    
+    display: flex;
+    padding: 1.125rem;
+    align-items: flex-end;
+    background-color: dimgrey;
+    background-image: url(../images/bouwproces_bg.jpeg);
+    background-size: cover;
+    height: 170px;
+}
+
+/* BLOKJE 3 -> GROEN-BLOKJE-IN-BLOK */
+
+section:nth-of-type(2) ul li:nth-of-type(3) div {
+    
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: rgba(var(--color-blokinblok-background) / 0.7);
+    padding: 0.5625em;
+}
+
+/* BLOKJE 3 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
+
+section:nth-of-type(2) ul li:nth-of-type(3) div p:nth-of-type(1) {
+    
+    margin: 0;
+    font-size:var(--font-size-witte-titel-kleiner);
+    color:var(  --color-witte-titel);
+    font-family: 'Expletus Sans', cursive;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Neuton', serif;
+    
+}
+
+
+
+/* ////// SECTION 3 ////// */
+
+
+/* GRIDBOX */
+
+section:nth-of-type(3) ul {
+    
+	margin-top: 1rem;;
+	padding:0 1em;
+	list-style:none;
+	
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:1em;
+    
+}
+
+section:nth-of-type(3) ul li:nth-of-type(1) {
+    
+	grid-column-start:1; /* van de eerste lijn */
+	grid-column-end:-1; /* tot de laatste lijn */
+    display: flex;
+    padding: 1.125rem;
+    align-items: flex-end;
+    background-image: url(../images/manmethand.jpeg);
+    background-size: cover;
+    min-height: 200px;
+    
+}
+
+/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
+
+section:nth-of-type(3) ul li:nth-of-type(1) div {
+    
+    display: block;
+    position: relative;
+    width: 50%;
+    background-color: rgba(var(--color-blokinblok-background) / 0.7);
+    padding: 0.5625em;
+}
+
+/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
+
+section:nth-of-type(3) ul li:nth-of-type(1) div p:nth-of-type(1) {
+    
+    margin: 0;
+    font-size:var(--font-size-witte-titel);
+    color:var(  --color-witte-titel);
+    font-family: 'Expletus Sans', cursive;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Neuton', serif;
+    
+}
+
+section:nth-of-type(3) ul li:nth-of-type(1) div p:nth-of-type(2) {
+    
+    margin: 0;
+    font-size:var(--font-size-kleine-tekst);
+    color:var(--color-kleine-text);
+    padding-top:0.3125em;
+    font-family: 'PT Sans';
+}
+
+section:nth-of-type(3) ul li:nth-of-type(2) {
+    
+	grid-column-start:1; /* van de eerste lijn */
+	grid-column-end:-1; /* tot de laatste lijn */
+    display: flex;
+    padding: 1.125rem;
+    align-items: flex-end;
+    background-image: url(../images/omhelsing.png);
+    background-size: cover;
+    min-height: 200px;
+    
+}
+
+/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK */
+
+section:nth-of-type(3) ul li:nth-of-type(2) div {
+    
+    display: block;
+    position: relative;
+    width: 50%;
+    background-color: rgba(var(--color-blokinblok-background) / 0.7);
+    padding: 0.5625em;
+}
+
+/* BLOKJE 1 -> GROEN-BLOKJE-IN-BLOK -> Witte tekst */
+
+section:nth-of-type(3) ul li:nth-of-type(2) div p:nth-of-type(1) {
+    
+    margin: 0;
+    font-size:var(--font-size-witte-titel);
+    color:var(  --color-witte-titel);
+    font-family: 'Expletus Sans', cursive;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Neuton', serif;
+    
+}
+
+section:nth-of-type(3) ul li:nth-of-type(2) div p:nth-of-type(2) {
+    
+    margin: 0;
+    font-size:var(--font-size-kleine-tekst);
+    color:var(--color-kleine-text);
+    padding-top:0.3125em;
+    font-family: 'PT Sans';
+}
+
+
+section:nth-of-type(3) h3 {
+    
+    display: block;
+    margin-bottom: 0.3125em;
+    margin-top: 0;
+    color:var(--color-h3-text);
+    font-size:var(--font-size-h3);
+    font-family: 'PT Sans';
+
+}
+
+main video {
+    
+    width: 100%;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
