@@ -8,6 +8,8 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 
 }
 
@@ -81,13 +83,6 @@ summary {
 /****************/
 /* ALGEMENE CODE */
 /****************/
-
-* {
-    margin: 0px;
-    padding: 0px;
-
-}
-
 
 body {
     color: var(--color-text);
@@ -200,36 +195,6 @@ section:nth-of-type(1) a {
 
     transition: .1s;
 
-}
-
-section:nth-of-type(1) a:hover,
-section:nth-of-type(1) a:focus-visible {
-    transform: translatey(-.2em);
-    box-shadow:
-        0 .2em var(--button-border-color),
-        inset 0 0 var(--button-border-color);
-    background-image: var(--footer-background-linear-gradient);
-
-}
-
-section:nth-of-type(1) a:hover {
-    /* standaard verandert de cursor niet :-( */
-    cursor: pointer;
-}
-
-section:nth-of-type(1) a:focus-visible {
-    background-color: var(--button-background-focus-color);
-}
-
-section:nth-of-type(1) a:active {
-    background-color: var(--button-background-active-color);
-
-    transform: translatey(0);
-
-    padding-top: .2em;
-    box-shadow:
-        0 0 var(--button-border-color),
-        inset 0 .2em var(--button-border-color);
 }
 
 /* 2 fixed buttons op de pagina */
@@ -402,16 +367,17 @@ main > section:nth-of-type(1) {
     flex-direction: column;
     background-color: var(--color-background);
     background-size: cover;
-    margin-bottom: 3.75rem;
+    margin-bottom: 1rem;
 
 }
 
 
 main > section:nth-of-type(1) ul {
 
-    padding-top: 6.75em;
-    padding-left: 2.25em;
-    padding-right: 2.25em;
+    padding-top:6.75em;
+    padding-left:2.25em;
+    padding-right:2.25em;
+    padding-bottom:4em;
     list-style: none;
     display: grid;
     grid-template-columns: 1fr;
@@ -457,20 +423,6 @@ section:nth-of-type(1) p:nth-last-of-type(2) {
 
 }
 
-section:nth-of-type(1) a {
-
-    border: 0;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-weight: 700;
-    letter-spacing: .031875rem;
-    padding: 0.9375rem 1.25rem;
-    margin: 30 0 0;
-    text-align: center;
-    font-family: 'PT Sans';
-
-}
 
 
 main section:nth-of-type(1) ul:nth-of-type(2) {
@@ -486,12 +438,97 @@ main section:nth-of-type(1) ul:nth-of-type(2) {
 
 main section:nth-last-of-type(1) ul:nth-of-type(2) li {
 
-    display: flex;
+
     width: 12.25em;
     height: 12.25em;
+    background-size: cover;
 
 
 }
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li a {
+    font-weight: 700;
+    letter-spacing: .031875rem;
+    font-family: 'PT Sans';
+    
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1em;
+    width:100%;
+    height:100%;
+}
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li img {
+    
+    height:60%;
+    display:block;
+    
+    transition: 1s;
+    
+}
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li a:hover img  {
+    
+    transform: scale(125%);
+    
+}
+    
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li:nth-of-type(1) {
+
+    background-image: url(../images/gradient-square-green.jpeg);
+ 
+
+
+}
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li:nth-of-type(2) {
+
+    background-image: url(../images/gradient-square-lblue.jpeg);
+
+
+
+}
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li:nth-of-type(3) {
+
+    background-image: url(../images/gradient-square-lgrey.jpeg);
+ 
+
+
+}
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li:nth-of-type(4) {
+
+    background-image: url(../images/gradient-square-lgrey2.jpeg);
+   
+
+}
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li:nth-of-type(5) {
+
+    background-image: url(../images/gradient-square-dgrey.jpeg);
+ 
+
+
+}
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li:nth-of-type(6) {
+
+    background-image: url(../images/gradient-square-dgrey2.jpeg);
+
+
+
+}
+
+main section:nth-last-of-type(1) ul:nth-of-type(2) li:nth-of-type(7) {
+
+    background-image: url(../images/gradient-square-green.jpeg);
+ 
+
+}
+
 
 
 /* ////// FOOTER ////// */
