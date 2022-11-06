@@ -475,6 +475,7 @@ footer > section ul:nth-of-type(3) {
     flex-direction: column;
     background-image:var(--footer-background-linear-gradient);
     background-size: cover;
+    align-items: center;
 
 }
 
