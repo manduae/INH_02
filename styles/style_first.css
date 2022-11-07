@@ -87,6 +87,8 @@ section:nth-of-type(1) a {
     
 }
 
+ /* Onderstaande hover state zet ik bij style_first.css ipv algemene styles om te voorkomen dat deze hover ook gebruikt word op de secundaire producten pagina */
+
 main section:nth-of-type(1) a {
     
     /* om het standaard randje bij focus niet te tonen */
@@ -145,7 +147,7 @@ section:nth-of-type(2) h2 {
     margin-top: 0;
     color:var(--color-heading-text);
     font-size:var(--font-size-h2);
-    padding:0 16px;
+    padding-left:0.5em;
     font-family: 'Expletus Sans', cursive;
     font-family: 'League Spartan', sans-serif;
     font-family: 'Neuton', serif;
@@ -288,7 +290,7 @@ section:nth-of-type(2) ul li:nth-of-type(2) {
     align-items: flex-end;
     background-color: dimgrey;
     background-size: cover;
-    height: 170px;
+    height: 10.625em;
     position: relative;
     
     overflow:hidden;
@@ -333,7 +335,7 @@ section:nth-of-type(2) ul li:nth-of-type(3) {
     background-color: dimgrey;
 
     background-size: cover;
-    height: 170px;
+    height: 10.625em;
     position: relative;
     
     overflow:hidden;
@@ -423,7 +425,7 @@ section:nth-of-type(3) ul li:nth-of-type(1) {
 	grid-column-end:-1; /* tot de laatste lijn */
     display: flex;
     align-items: flex-end;
-    height: 250px;
+    height: 15.625em;
     position: relative;
     
     overflow:hidden;
@@ -477,7 +479,7 @@ section:nth-of-type(3) ul li:nth-of-type(2) {
 	grid-column-end:-1; /* tot de laatste lijn */
     display: flex;
     align-items: flex-end;
-    height: 250px;
+    height: 15.625em;
     position: relative;
     
     overflow:hidden;

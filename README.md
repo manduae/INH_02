@@ -173,9 +173,9 @@ Voortgang
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - punt 1: Bij het schrijven van rgb codes moet je letten op het verschil van de oude en de nieuwe manier. Bij de nieuwe manier laat je comma's achterwege en vervang je deze met een "/". Door deze aanpassing kwam de achtergrond van het menu weer naar boven.
-  - punt 2
-  - nog een punt
-  - ...
+  - Nth child toepassen hing samen met het opruimen van mijn css. Volgorde moet veranderd worden voor overzichtelijkere read.
+  - Indeling/basis staat redelijk, meer focus op styling en de extra states etc.
+  - Footer moet aan gewerkt worden, flex toepassen met align items center + states.
 
 </details>
 
@@ -184,11 +184,11 @@ Voortgang
 <details open>
 
   ### Stand van zaken
-  tekst hier
+  Nu ik eenmaal de basis structuur heb overgenomen van de website, merk ik dat op het gebied van styling, veel af te lezen valt van de werkelijke website. Hoeveel padding elk element bevalt etc. Dit ben ik nu aan het toepassen en ik merk dat de website meer op zijn plaats begint te vallen:
   
   <img src="readme-images/voortgang_vlag.png" width="375px" alt="voortgang_vlag">
   
-  tekst hier
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -205,7 +205,9 @@ Voortgang
   - H1 en P verwisselen (met -1 ask Giorgio)
   - Filter erop gooien
   - Footer h2 nodig en weghalen met "display non"
-  -
+  
+  Uiteindelijk is het toevoegen van een h2 met display none niet nodig geweest omdat er al een h2 in de footer aanwezig was. Het toevoegen van een filter is gelukt omdat background image is vervangen voor daadwerkelijke images.
+  
 
 </details>
 
@@ -215,15 +217,15 @@ Voortgang
   
    ### Screenreader:
    
-  Wat betreft de screenreader
+  Screenreader klonk logisch met bijgevoegde alt elementen, heb geen bijzondere inzichten verkregen.
    
    ### Muis & toetsenbord:
    
   Met het tappen vraag ik mij af hoe ik via de menu/button naar de linkjes ga in de lijst. Ook ga je als user vanaf het hamburger menu naar de fixed buttons onderaan de pagina. Als je enter klikt, schuift het menu wel open, echter als je verder tikt met tap, slaat ie de li items over met de a'tjes er in. Dit is nu opgelost omdat ik aan mijn pagina een max width had gegeven waardoor ie buiten het beeld verder ging tappen. Nu ik max-width heb weggehaald gaat ie wel volgens logische volgorde. Mijn 2e punt was dat de de tab niet begint bij het menu bovenaan:
   
-  <img src="readme-images/testing_screen1.png" width="375px" alt="voortgang_vlag">
+  <img src="readme-images/testing_screen1.png" width="375px" alt="voortgang_tap">
   
-  
+  Ik ben er achter gekomen dat dit lag aan mijn screen reader, als het goed is begin je met het gebruik van de screenreader boven aan de header.
    
 
   ### Visual eye simulator bril:
@@ -239,7 +241,7 @@ Voortgang
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik merkte dat het voor visueel slecht ziende mensen het van belang was dat tekst groter moet zijn dan 16px met een hoog contrast kleur omdat de tekst anders niet te lezen valt. Ook zijn extra animatie elementen hinderlijk voor zijn/haar user journey. 
 
 </details>
 
@@ -251,21 +253,46 @@ Voortgang
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  
+  <img src="readme-images/uitkomst1.png" width="375px" alt="resultaat1">
+   <img src="readme-images/uitkomst2.png" width="375px" alt="resultaat2">
+    <img src="readme-images/uitkomst3.png" width="375px" alt="resultaat3">
+     <img src="readme-images/uitkomst4.png" width="375px" alt="resultaat4">
+      <img src="readme-images/uitkomst5.png" width="375px" alt="resultaat5">
+       <img src="readme-images/uitkomst6.png" width="375px" alt="resultaat6">
+        <img src="readme-images/uitkomst7.png" width="375px" alt="resultaat7">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  
+  Uiteindelijk heb ik super veel geleerd tijdens deze lessen, meer dan ooit tevoren. Voor mijn gevoel zit ik nu lekker in de flow van coderen en merk ik aan mijzelf dat het automatisme begint te worden. Dit had ik bijvoorhand van de lessen niet kunnen denken, ik zat er tegen op omdat ik niet goed ben in coderen maar ik moet zeggen dat ik mijzelf heb verbaast. Dit zit 'em denk ik in het feit dat ik veel ben gaan tikken in plaats van eindeloos naar theorie te gaan kijken. Hierin merk je toch dat het een kwestie is van oefenen. Ook het toepassen van meerdere css files heeft het voor mij overzichtelijker gemaakt. 1 basis structuur met header, algemene code en footer + 2 losse .css voor elke pagina. Dit maakt het overzichtelijker en wederom leuker om te coderen. Ik begrijp de verhoudeingen van parent elementen en childeren, wanneer je een grid toepast met flex en vise versa. Ook begrijp ik beter hoe je begint met de pagina structuur. Meeste is opgebouwd uit ul met daarin list items die je via deze manier kan stijlen. Ook het gebruik van root was een verademing en logischer + efficienter. Het niet gebruiken van classes was wennen maar dit wende al snel met het gebruik van :nth-of-type() toe te voegen aan alle elementen. Ik merk dat ik hierdoor coderen ook een tikkeltje leuker ben gaan vinden dan voorheen, omdat ik dit nu beter snap. Al met al merk ik een sterke groei van afgelopen maanden, hier ben ik blij en trots om. Als laatst merk ik dat ik naast de hulp van Sanne en Jeffrey, weinig externe bronnen heb gebruikt. Ik merkte dat de stof via HVA DLO vrijwel voldoende was om het te leren begrijpen, ook omdat ik de uitleg op andere websites verwarrend vond, dit vond ik wel inzichtelijk. Niet veel bronnen gebruikt maar meer vertrouwd op mijn eigen kunnen d.m.v. het toepassen van de lessen, veel efficienter!
+  
+  
+  Toegevoegd voor Surface plane: 
+  
+  - Dark/Light mode
+  - Animatie
+  - Reduce motion
+  - Video
+  - States van controls
+  - Advanced positioning
+  
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
-
+  Waar ik uiteindelijk van baal is dat het mij niet lukte om mijn grid op pagina 2 mee te laten schalen en fitted te maken binnen het viewport:
+  
+  <img src="readme-images/failure1.png" width="375px" alt="failure1">
+  
+  Ik heb het list-item een size gegeven van 12.25rem hoog en breed. Ik ben er niet achter kunnen komen hoe je dit kan laten mee schalen terwijl deze BxH verhouding hetzelfde blijft.
+  
+  Het tweede wat niet gelukt is, is het vervangen van de homepage foto om er een filter op te gooien. Ik kwam er niet uit in combinatie met de andere elementen binnen deze section, waarschijnlijk moest ik de elementen in een div gooien met z-index maar ik durfde simpelweg geen risico te nemen omdat mijn section overhoop zou raken. Voor de andere sections is dit wel gelukt gelukkig:
+  
+  <img src="readme-images/uitkomst1.png" width="375px" alt="resultaat1">
+  
+  Verder is gelukt wat ik wilde bereiken en hier ben ik blij om.
+  
 
 
 
@@ -278,7 +305,10 @@ Voortgang
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
   1. https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
-  2. bron 2
-  3. ...
+  2. bron: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+  3. bron: https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable voor het gebruiken van rgb code voor opacity ipv een HEX-code
+  4. https://dlo.mijnhva.nl/d2l/le/content/437097/Home
+  
+  toelichting bron 4: Ik heb vrijwel alle informatie vanuit deze oefeningen en voorbeelden kunnen toepassen op mijn website, hierdoor heb ik weinig tot geen externe bronnen gebruikt omdat ik dit verwarrend vond.
 
 </details>

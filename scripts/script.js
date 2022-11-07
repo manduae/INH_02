@@ -20,27 +20,3 @@ function menuOpenen() {
   deNav.classList.toggle("open");
 }
 
-
-
-/************************************/
-/* menu sluiten met de sluit button */
-/************************************/
-
-/* JOUW CODE HIER - stap 5 */
-
-// stap 1 - zoek sluiten button op
-
-//var sluitButton = document.querySelector("header nav button");
-
-// stap 2 - laat die button luisteren naar kliks
-
-//sluitButton.addEventListener("click", menuSluiten);
-
-// stap 3 - in de functie verwijder de class van de nav
-
-//function menuSluiten() {
-//  var deNav = document.querySelector("header nav");
-//  
-//  deNav.classList.remove("open");
-//}
-

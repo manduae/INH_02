@@ -97,7 +97,6 @@ body {
 main > section {
     
     
-/*    height: 70vh;*/
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,15 +215,49 @@ footer a:hover::after {
     transform:scaleX(100%);
 }
 
+/* submit hover */
 
-header a:nth-of-type(1) img {
-     
-    position: relative;
-    width: 3.8125em;
-    padding-bottom: 0.3em;
-    padding-top: 0.3em;
+main section:nth-of-type(1) a {
+    
+    /* om het standaard randje bij focus niet te tonen */
+  outline:none;
+  /* nodig voor telefoons */
+  appearance:none;
+  
+  transition:.1s;
     
 }
+
+footer input:hover,
+footer input:focus-visible {
+  transform:translatey(-.2em);
+  box-shadow:
+    0 .2em var(--button-border-color), 
+    inset 0 0 var(--button-border-color); 
+    background-image:var(--footer-background-linear-gradient);
+    
+}
+
+footer input:hover {
+  /* standaard verandert de cursor niet :-( */
+  cursor:pointer;
+}
+
+footer input:focus-visible {
+  background-color:var(--button-background-focus-color);
+}
+
+footer input:active {
+  background-color:var(--button-background-active-color);
+  
+  transform:translatey(0);
+  
+  padding-top:.2em;
+  box-shadow:
+    0 0 var(--button-border-color), 
+    inset 0 .2em var(--button-border-color); 
+}
+
 
 
 
@@ -288,6 +321,15 @@ header > button:nth-of-type(1) {
     
 }
 
+header a:nth-of-type(1) img {
+     
+    position: relative;
+    width: 3.8125em;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+    
+}
+
 
 nav { 
     position: fixed;
@@ -330,9 +372,6 @@ ul {
     
 }
 
-nav ul li {
-    padding: 16pxed
-}
 
 nav li a {
     
@@ -361,9 +400,9 @@ main > button:nth-of-type(1) {
     
     z-index: 9999;
     position: fixed;
-    bottom: 100px;
-    right: 30px;
-    border-radius: 8px;
+    bottom: 6em;
+    right: 1.875em;
+    border-radius: 0.5em;
     box-shadow: rgb(0 0 0 / 50%) 0px 4px 12px;
     
 }
@@ -382,8 +421,8 @@ main > button:nth-of-type(2) {
     
     z-index: 9999;
     position: fixed;
-    bottom: 40px;
-    right: 30px;
+    bottom: 2em;
+    right: 1.875em;
     border-radius: 8px;
     box-shadow: rgb(0 0 0 / 50%) 0px 4px 12px;
     
@@ -516,7 +555,7 @@ footer > section ul:nth-of-type(2) {
 
 footer ul:nth-of-type(2) li img {
     
-    width: 84px; /* bah bah bah bah bah pixels */
+    width: 5.25em; 
     display:block;
     margin:0 auto;
     padding-bottom: 3.75em;
